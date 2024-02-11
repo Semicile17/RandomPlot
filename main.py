@@ -29,8 +29,8 @@ def plotCoordinates(csvFile, gridInt):
     # Setting custom grid interval 
     pl.minorticks_on()
     pl.grid(which='minor', linestyle=':', linewidth='0.5', color='black', alpha=0.7, axis='both')
-    pl.gca().set_xticks(range(int(min(x)), int(max(x))+1, gridInt))
-    pl.gca().set_yticks(range(int(min(y)), int(max(y))+1, gridInt))
+    pl.gca().set_xticks(range(int(min(x)), int(max(x)), gridInt))
+    pl.gca().set_yticks(range(int(min(y)), int(max(y)), gridInt))
 
     # showing plot
     pl.show()

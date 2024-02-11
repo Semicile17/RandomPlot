@@ -12,7 +12,8 @@ def sortCoordCsv(inpFile, outFile):
     # Read the input CSV file
     with open(inpFile, 'r') as file:
         reader = csv.reader(file)
-        coordinates = [row for row in reader]
+        coordinates = list(reader)
+      
 
  # Sort the coordinates based on x and then y
  # Sorted on the basis of x coordinate first and y second 
