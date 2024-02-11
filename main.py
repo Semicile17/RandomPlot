@@ -4,7 +4,7 @@ from Lib2 import *
 import matplotlib.pyplot as pl
 import pandas as pd
 # generating random coordinates 
-coordinates = generateCoordinates(10)
+coordinates = generateCoordinates(100) # no of coordinates here 
 
 # saving to a csv file 
 saveToCsv(coordinates, 'coordinatesUn.csv')

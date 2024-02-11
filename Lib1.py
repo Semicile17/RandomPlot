@@ -17,7 +17,7 @@ def generateCoordinates(numPoints):
 def saveToCsv(coordinates, filename):
     with open(filename, 'w', newline='') as csvfile:
         fieldnames = ['x', 'y']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames) #using Dictwriter to write to csvfile
         writer.writeheader()
         for coord in coordinates:
             writer.writerow({'x': coord[0], 'y': coord[1]})
